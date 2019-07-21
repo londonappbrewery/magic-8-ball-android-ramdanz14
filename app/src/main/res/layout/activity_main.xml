@@ -9,5 +9,34 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:paddingBottom="16dp"
+    android:background="@color/colorPrimary"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:text="@string/title"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/img_ball"
+        android:layout_below="@id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ball1"/>
+    <Button
+        android:id="@+id/bt_ask"
+        android:text="@string/ask"
+        android:layout_below="@+id/img_ball"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:background="#26ade0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </RelativeLayout>
